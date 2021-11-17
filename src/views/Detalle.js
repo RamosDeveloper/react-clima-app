@@ -1,8 +1,6 @@
 import { Link }  from "react-router-dom";
 
 const Detalle = ({informacion}) => {
-    console.log(informacion);
-
     const {name, main, weather, wind} = informacion;
     const iconName = weather[0].icon;
     const iconURL = `http://openweathermap.org/img/wn/${iconName}.png`;  
@@ -34,7 +32,7 @@ const Detalle = ({informacion}) => {
                         </div>
                         <div className="col-12 text-center">
                             <Link className="btn btn-dark" to="/">
-                                <i class="fas fa-home"></i>&nbsp;&nbsp;
+                                <i className="fas fa-home"></i>&nbsp;&nbsp;
                                 <span className="ml-5">Home</span>
                             </Link>
                         </div>                          
