@@ -1,38 +1,63 @@
-.App {
+.icono-app {
+  color: gainsboro;
+  position: absolute;
+  font-size: 3rem;
+  top: 16px;
+  left: 16px;
+}
+
+.card-resumen {
+  max-width: 700px;
+}
+
+.card-resumen .card-header {
+  background-color: white;
+}
+
+.card-resumen img, .card-detalle img {
+  height: 300px;
+}
+
+.clima-icon-container {
+  background-color: lavender;
+  border-radius: 50%;
+}
+
+.clima-city-name-container {
+  display: flex!important;  
+  min-height: 312px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clima-city-name-container kbd, .detalle-middle-container kbd {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.clima-city-name-container code, .detalle-middle-container code {
+  font-size: 3.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.detalle-middle-container {
+  display: flex!important;  
+  min-height: 312px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;  
 }
 
-.App-link {
-  color: #61dafb;
+.detalle-middle-container kbd {
+  text-align: center;
+  font-size: 3.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detalle-middle-container code {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.detalle-middle-container mark {
+  font-size: 2.5rem;
+  text-align: center;
 }
